@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm Shou-Yi, Hung, but I prefer to be called Ray. I was born in Taichung, Taiwan, but grew up in Xiamen, Fujian, China. I can speak English, Chinese, a little bit of Taiwanese Hokkien, and a little bit of Japanese! 
+Hi! I'm **Shou-Yi, Hung**, and you can also call me **Ray**. I was born in Taichung, Taiwan, but grew up in Xiamen, Fujian, China. I can speak English, Chinese, a little bit of Taiwanese Hokkien, and a little bit of Japanese! 
 
 Education
 ======
-I'm studying at the University of Toronto, Computer Science Specialist (Major) with a Statistics Minor. 
+I'm studying at the University of Toronto, majoring in Computer Science with a minor in Statistics.  
 
 Some of the important courses that I have taken includes: 
 
