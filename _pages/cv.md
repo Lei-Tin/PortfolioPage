@@ -101,6 +101,10 @@ A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
 * Frameworks / Tools
   * Shell (Bash, Zsh, Sh), Linux / Unix, Selenium, Matplotlib, Seaborn, Pandas, REST API, LaTeX, Flask, BeautifulSoup, React, Node.js, Docker, Jupyter Notebook, Conda, Git, CI/CD, Amazon Web Services (EC2), Microsoft Azure
 
+* Media
+  * Adobe Photoshop, Adobe Illustrator, Adobe Premiere
+  * Figma, draw.io
+  * Microsoft Suite (Word, Powerpoint, Excel)
 
 # Test Scores
 * January 2020: TOEFL iBT, score 107, 27/25/29/26
