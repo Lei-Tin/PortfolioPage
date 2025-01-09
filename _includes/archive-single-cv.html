@@ -28,20 +28,19 @@
     {% endif %}
     <i>{{ post.date | default: "1900-01-01" | date: "%Y-%m" }}</i> -
     <span class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-          {{ title }}
-      
-          {% if post.venue %}
-            <i>, {{ post.venue }}</i>
-          {% endif %}
-        </a>
-      {% endif %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+        {{ title }}
+      </a>
     </span>
+    {% if post.venue %}
+    ,
+    <i>
+      {{ post.venue }}
+    </i>
+    {% endif %}
     {% if post.authors %}
-      , <i class="post-authors">
+    ,
+      <i class="post-authors">
         {{ post.authors }}
       </i>
     {% endif %}
