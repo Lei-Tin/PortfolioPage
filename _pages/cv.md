@@ -19,7 +19,11 @@ A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
 
 
 # Work Experience
-* May 2024 ~ Present: Machine Learning Researcher Intern @ Huawei Technologies Canada
+* May 2025 ~ Present: Software Development Engineer @ AWS Vancouver
+  * Duties include: 
+    * Software Development
+
+* May 2024 ~ May 2025: Machine Learning Researcher Intern @ Huawei Technologies Canada
   * Duties include: 
     * Researching with Large Language Models in model quantization (sub 4 bits) and synthetic data generation for model tuning
     * Data preprocessing for model training
