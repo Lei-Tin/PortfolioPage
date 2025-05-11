@@ -55,7 +55,6 @@ Skills
 - R
 - MIPS Assembly
 - Rust
-- AWS (EC2, Lambda, EventBridge)
 
 ## Machine Learning
 - HuggingFace
@@ -83,5 +82,5 @@ Skills
 - Conda
 - Git
 - CI/CD
-- Amazon Web Services (EC2)
+- Amazon Web Services (EC2, Lambda, EventBridge)
 - Microsoft Azure
