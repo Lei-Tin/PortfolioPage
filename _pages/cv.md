@@ -9,48 +9,45 @@ redirect_from:
 
 {% include base_path %}
 
-A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
+A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Education
 * Honours Bachelor of Science in Computer Science, with a Minor in Statistics, University of Toronto, 2026 (Expected)
+  * Arts & Sceince Internship Program (Co-op)
   * Cumulative GPA 4.0/4.0
-  * Deans List x3
+  * Deans List x3, University of Toronto Excellence Award (UTEA), Woodsworth College Scholarship
 
 
 # Work Experience
 * May 2025 ~ Present: Software Development Engineer @ AWS Vancouver
-  * Duties include: 
-    * Software Development
+  * Working with EventBridge
+  * Software Development
 
 * May 2024 ~ May 2025: Machine Learning Researcher Intern @ Huawei Technologies Canada
-  * Duties include: 
-    * Researching with Large Language Models in model quantization (sub 4 bits) and synthetic data generation for model tuning
-    * Data preprocessing for model training
-    * Training Large Language Models up to 7 billion parameters for down stream tasks
+  * Researching with Large Language Models in model quantization (sub 4 bits), synthetic data generation for model tuning, and model distillation for speculative decoding. 
   * Supervisor: [Huan Liu](https://scholar.google.com/citations?user=6QbMAhkAAAAJ&hl=en)
 
 * September 2022 ~ April 2023: Tech2U Classroom Ambassador @ University of Toronto
   * Work Study Program at University of Toronto
-  * Duties include: 
-    * Providing hands-on direct technical support and orientation to the classroom instructor during class time. 
-    * Worked with instructors to provide technical support for classroom technology. 
+  * Provided hands-on direct technical support and orientation to the classroom instructor during class time. 
+  * Worked with instructors to provide technical support for classroom technology. 
 
 
 # Research Experience
-* May 2022 ~ Present: NLP Research Assistant
-  * Duties includes: 
-    * Conducting statistical analysis with $$\chi^2$$-test and t-test on numerous dataset, and utilized seaborn to plot
-    * Implemented a frontend UI using React Native for a low resource language (Taiwanese Hokkien) learning framework
-    * Assisted in writeup of more than 10 papers submitted to conferences
+* May 2025 ~ Present: Machine Learning Research Assistant
+  * Researched on knowledge distillation and pretraining models
+  * Supervisor: [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/)
+
+* May 2022 ~ Present: Machine Learning Research Assistant
+  * Researched on Multilingual translation models and LLMs applications in the real world
   * Supervisor: [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/)
 
 * September 2023 ~ December 2023: Operating Systems Research Volunteer
   * Project aimed to develop a toy operating system for educational purposes (like Stanford's PintOS), named KidneyOS, written completely in Rust. 
+  * Implemented memory allocation features through Pool Allocator
+  * Implemented ELF header verifications partially
   * Project is available [here](https://github.com/KidneyOS/KidneyOS)
-  * Duties includes: 
-    * Implemented memory allocation features through Pool Allocator
-    * Implemented ELF header verifications partially
   * Supervisor: [Prof. Kuei (Jack) Sun](https://www.cs.toronto.edu/~sunk/)
 
 
@@ -84,10 +81,6 @@ A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
   * Achieved model performance within the top 15th percentile among human players
 
 
-# Awards
-* 2023: Woodsworth College Scholarship, valued at $xxx
-
-
 # Volunteer Activities
 * 2024: ACM SIGCSE TS Student Volunteer
 * 2021 ~ Present: Volunteer Note Taker at University of Toronto
@@ -103,7 +96,7 @@ A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
   * HuggingFace, PyTorch, OpenCV, NumPy, Accelerate (Fully Sharded Data Parallel, Distributed Data Parallel), Distributed Learning
 
 * Frameworks / Tools
-  * Shell (Bash, Zsh, Sh), Linux / Unix, Selenium, Matplotlib, Seaborn, Pandas, REST API, LaTeX, Flask, BeautifulSoup, React, Node.js, Docker, Jupyter Notebook, Conda, Git, CI/CD, Amazon Web Services (EC2), Microsoft Azure
+  * Shell (Bash, Zsh, Sh), Linux / Unix, Selenium, Matplotlib, Seaborn, Pandas, REST API, LaTeX, Flask, BeautifulSoup, React, Node.js, Docker, Jupyter Notebook, Conda, Git, CI/CD, AWS, Microsoft Azure
 
 * Media
   * Adobe Photoshop, Adobe Illustrator, Adobe Premiere
@@ -112,6 +105,7 @@ A PDF version of my CV is available [here (not available yet)](./files/cv.pdf)
 
 # Test Scores
 * January 2020: TOEFL iBT, score 107, 27/25/29/26
+* May 2025: GRE, score 330, 160/170
 
 
 # Certificates
