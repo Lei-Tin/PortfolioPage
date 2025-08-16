@@ -7,7 +7,7 @@ excerpt: "This paper provides a dataset for Sinitic Languages, annotated with Tr
 date: 2025-06-22
 venue: 'COLM WMDQS Workshop'
 paperurl: '/404.html'
-authors: "Hannah Liu, Ethan Yue Heng Cheung, Shou-Yi Hung, Junghyun Min, Syed Mekael Wasti, RUNTONG LIANG, ShiYao Qian, shizhao zheng, Elsie Chan, Ka Ieng Charlotte Lo, Wing Yu Yip, Richard Tzong-Han Tsai, En-Shiun Annie Lee"
+authors: "Hannah Liu, Ethan Yue Heng Cheung, Shou-Yi Hung, Junghyun Min, Syed Mekael Wasti, Runtong Liang, ShiYao Qian, shizhao zheng, Elsie Chan, Ka Ieng Charlotte Lo, Wing Yu Yip, Richard Tzong-Han Tsai, En-Shiun Annie Lee"
 # slidesurl: ''
 # citation: ""
 ---
