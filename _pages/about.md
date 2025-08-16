@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm **Shou-Yi, Hung**, and you can also call me **Ray**. I was born in Taichung, Taiwan, but grew up in Xiamen, Fujian, China. I can speak English, Chinese, a little bit of Taiwanese Hokkien, and a little bit of Japanese! 
+Hi! I'm **Shou-Yi, Hung**, and you can also call me **Ray**. I was born in Taichung, Taiwan, but grew up in Xiamen, Fujian, China. I can speak English, Chinese, a little bit of Taiwanese Hokkien, and a little bit of Japanese! You can reach out to me at **rayh@cs.toronto.edu** or **syhung0927@gmail.com**. 
 
 Education
 ======
@@ -19,20 +19,22 @@ Operating Systems, Computer Networking Systems, Deep Learning, Probabilistic Lea
 
 Interests
 ======
-My research interest currently lies in large language models, machine learning, and data processing. I am interested in the different applications that machine learning can be applied on to make our lives easier from day to day. Furthermore, I am interested to also discover any more optimal way that we can be using large language models, ranging from more efficient training to model interpretability. 
+My research interest currently lies in large language models, machine learning, and data processing. I am interested in the different applications that machine learning can be applied on to make our lives easier from day to day. Furthermore, I am interested to also discover any more optimal way that we can be using large language models, ranging from more efficient training and inferencing to model interpretability. 
 
-My other interest lies in software engineering, which is reflected by my different projects that I have accomplished througout the years. I am extremely excited when I have the opportunity to build something that really makes an impact for myself and also the community around me. More details about this can be found in my [portfolio page](./portfolio)
+My other interest lies in software engineering, which is reflected by my different projects that I have accomplished througout the years. I am extremely excited when I have the opportunity to build something that really makes an impact for myself and also the community around me. More details about this can be found in my [portfolio page](./portfolio). 
 
 Internship Experiences
 ======
 
-I'm currently working as a Software Development Engineer at Amazon Web Services Vancouver, working under the EventBridge team. 
+I have worked at as a Software Development Engineer at Amazon Web Services Vancouver, working under the EventBridge team. More details can be found on the PDF version of my CV (at the top of my [CV Page](./cv)).
 
-Previously worked at Huawei Canada as a Machine Learning Researcher Intern at the Noah's Ark Lab for 12 months. I was focused on Large Language Model researches, including model quantization and synthetic data generation for model training. Most of the time, I worked on research related works, that is, running experiments, reading papers, presenting ideas, etc. However, sometimes, I also get assigned deliverable works, which involves training models that can be deployed either on the cloud or edge devices.  
+I previously worked at Huawei Canada as a Machine Learning Researcher Intern at the Noah's Ark Lab for 12 months. I was focused on Large Language Model researches, including model quantization and synthetic data generation for model training. Most of the time, I worked on research related works, that is, running experiments, reading papers, presenting ideas, etc. However, sometimes, I also get assigned deliverable works, which involves training models that can be deployed either on the cloud or edge devices.  
 
 Academic Research Experiences
 ======
-I have had the pleasure to be supervised by [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/) as an **NLP research student**, where I was given numerous tasks, ranging from conducting statistical analysis to assisting in writing up research papers. 
+I have had the pleasure to be supervised by [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/) as a research assistant, where I conducted research on model sparsity and quantization, focusing on LLMs and model acceleration.
+
+I have also had the pleasure to be supervised by [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/) as an **NLP research student**, where I was given numerous tasks, ranging from conducting statistical analysis to assisting in writing up research papers. 
 
 Together, we have published a few papers, publications can be found under the [publications page](./publications). 
 
@@ -55,6 +57,8 @@ Skills
 - R
 - MIPS Assembly
 - Rust
+- Ruby
+- TypeScript
 
 ## Machine Learning
 - HuggingFace
@@ -82,5 +86,5 @@ Skills
 - Conda
 - Git
 - CI/CD
-- Amazon Web Services (EC2, Lambda, EventBridge)
+- Amazon Web Services
 - Microsoft Azure
