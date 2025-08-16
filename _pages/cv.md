@@ -20,7 +20,7 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Work Experience
-* May 2025 ~ Present: Software Development Engineer @ AWS Vancouver
+* May 2025 ~ August 2025: Software Development Engineer @ AWS Vancouver
   * Working with EventBridge
   * Software Development
 
@@ -37,6 +37,7 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 # Research Experience
 * May 2025 ~ Present: Machine Learning Research Assistant
   * Researched on knowledge distillation and pretraining models
+  * Conducted experiments on 2:4 model sparsity and quantization with [SLiM](https://arxiv.org/abs/2410.09615), [BEAM](https://www.cs.toronto.edu/~mmozaffari/compression-trinity/beam/index.html), and utilized sparse Marlin Kernels to accelerate inference
   * Supervisor: [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/)
 
 * May 2022 ~ Present: Machine Learning Research Assistant
