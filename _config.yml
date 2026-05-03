@@ -27,7 +27,7 @@ author:
   bio              : "Hi! I'm an incoming student at Stanford MSCS! Open to opportunities to learn!"
   location         : "Stanford, CA"
   employer         : "Stanford University"
-  uri              : "www.shouyihung.com"
+  uri              : # URL
   email            : "rayh@cs.toronto.edu" 
 
   # Academic websites
