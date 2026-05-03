@@ -123,6 +123,6 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Student Clubs
-* 2022 ~ Present: Member, Computer Science Student Union (CSSU), University of Toronto
-* 2022 ~ Present: Member, Google Student Developer Club (GDSC), University of Toronto
+* 2022 ~ 2025: Member, Computer Science Student Union (CSSU), University of Toronto
+* 2022 ~ 2025: Member, Google Student Developer Club (GDSC), University of Toronto
 * 2022: Member, Riichi Mahjong Club (UTRMC), University of Toronto
