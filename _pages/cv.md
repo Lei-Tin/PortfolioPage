@@ -13,7 +13,10 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Education
-* Honours Bachelor of Science in Computer Science, with a Minor in Statistics, University of Toronto, 2026 (Expected)
+* MSCS, Stanford University, 2026 - 2028 (Expected)
+  * Incoming student in Autumn 2026
+
+* Honours Bachelor of Science in Computer Science, with a Minor in Statistics, University of Toronto, 2021 - 2026
   * Arts & Sceince Internship Program (Co-op)
   * Cumulative GPA 4.0/4.0
   * Deans List x3, University of Toronto Excellence Award (UTEA), Woodsworth College Scholarship
@@ -24,9 +27,9 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
   * Working with EventBridge
   * Software Development
 
-* May 2024 ~ May 2025: Machine Learning Researcher Intern @ Huawei Technologies Canada
+<!-- * May 2024 ~ May 2025: Machine Learning Researcher Intern @ Huawei Technologies Canada
   * Researching with Large Language Models in model quantization (sub 4 bits), synthetic data generation for model tuning, and model distillation for speculative decoding. 
-  * Supervisor: [Huan Liu](https://scholar.google.com/citations?user=6QbMAhkAAAAJ&hl=en)
+  * Supervisor: [Huan Liu](https://scholar.google.com/citations?user=6QbMAhkAAAAJ&hl=en) -->
 
 * September 2022 ~ April 2023: Tech2U Classroom Ambassador @ University of Toronto
   * Work Study Program at University of Toronto
@@ -35,12 +38,12 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Research Experience
-* May 2025 ~ Present: Machine Learning Research Assistant
+* May 2025 ~ December 2025: Machine Learning Research Assistant
   * Researched on knowledge distillation and pretraining models
   * Conducted experiments on 2:4 model sparsity and quantization with [SLiM](https://arxiv.org/abs/2410.09615), [BEAM](https://www.cs.toronto.edu/~mmozaffari/compression-trinity/beam/index.html), and utilized sparse Marlin Kernels to accelerate inference
   * Supervisor: [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/)
 
-* May 2022 ~ Present: Machine Learning Research Assistant
+* May 2022 ~ December 2025: Machine Learning Research Assistant
   * Researched on Multilingual translation models and LLMs applications in the real world
   * Supervisor: [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/)
 
