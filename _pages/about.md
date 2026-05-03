@@ -11,7 +11,7 @@ Hi! I'm **Shou-Yi, Hung**, and you can also call me **Ray**. I was born in Taich
 
 Education
 ======
-I'm studying at the University of Toronto, majoring in Computer Science with a minor in Statistics.  
+I'm an incoming student at Stanford, MSCS program for Autumn 2026. I previously graduated with a Bachelor's Degree from the University of Toronto, specializing in Computer Science with a minor in Statistics.  
 
 Some of the important courses that I have taken includes: 
 
@@ -28,7 +28,7 @@ Internship Experiences
 
 I have worked at as a Software Development Engineer at Amazon Web Services Vancouver, working under the EventBridge team. More details can be found on the PDF version of my CV (at the top of my [CV Page](./cv)).
 
-I previously worked at Huawei Canada as a Machine Learning Researcher Intern at the Noah's Ark Lab for 12 months. I was focused on Large Language Model researches, including model quantization and synthetic data generation for model training. Most of the time, I worked on research related works, that is, running experiments, reading papers, presenting ideas, etc. However, sometimes, I also get assigned deliverable works, which involves training models that can be deployed either on the cloud or edge devices.  
+<!-- I previously worked at Huawei Canada as a Machine Learning Researcher Intern at the Noah's Ark Lab for 12 months. I was focused on Large Language Model researches, including model quantization and synthetic data generation for model training. Most of the time, I worked on research related works, that is, running experiments, reading papers, presenting ideas, etc. However, sometimes, I also get assigned deliverable works, which involves training models that can be deployed either on the cloud or edge devices.   -->
 
 Academic Research Experiences
 ======
