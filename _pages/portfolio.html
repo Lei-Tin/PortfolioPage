@@ -7,8 +7,11 @@ author_profile: true
 
 {% include base_path %}
 
+<p class="portfolio-intro">A mix of software projects, course work, and small experiments.</p>
 
-{% for post in site.portfolio reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="portfolio-grid">
+  {% for post in site.portfolio reversed %}
+    {% include portfolio-card.html %}
+  {% endfor %}
+</div>
 

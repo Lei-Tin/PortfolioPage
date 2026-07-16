@@ -4,9 +4,16 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button class="nav-menu-toggle" aria-label="Open navigation" type="button"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a class="site-brand" href="{{ base_path }}/" aria-label="{{ site.name }} home">
+              <span class="site-brand__cat" aria-hidden="true">
+                <img class="site-brand__icon" src="{{ base_path }}/images/favicon.ico" alt="" width="32" height="32">
+              </span>
+              <span>Ray Hung</span>
+            </a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -17,7 +24,17 @@
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
+        <ul class="mobile-links hidden">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = base_path %}{% endif %}
+            <li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme">
+        <span class="theme-toggle__sun" aria-hidden="true">☀</span>
+        <span class="theme-toggle__moon" aria-hidden="true">◐</span>
+      </button>
     </div>
   </div>
 </div>

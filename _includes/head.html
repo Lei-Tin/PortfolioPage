@@ -10,6 +10,17 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fbf7ee">
+
+<script>
+  (function () {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('theme'); } catch (error) { savedTheme = null; }
+    var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.dataset.theme = savedTheme || systemTheme;
+    document.documentElement.dataset.themeSource = savedTheme ? 'user' : 'system';
+  }());
+</script>
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';

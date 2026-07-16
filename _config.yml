@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Ray's Site"
+title                    : "Shou-Yi Hung"
 title_separator          : "-"
 name                     : &name "Shou-Yi (Ray) Hung"
-description              : &description "personal description"
+description              : &description "AI researcher and software engineer building efficient, useful intelligent systems."
 url                      : https://shouyihung.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Lei-Tin/PortfolioPage"
@@ -24,7 +24,7 @@ author:
   avatar           : "ray.jpg"
   name             : "Shou-Yi (Ray) Hung"
   pronouns         : "He/Him"
-  bio              : "Hi! I'm an incoming student at Stanford MSCS! Open to opportunities to learn!"
+  bio              : "AI researcher and software engineer. Incoming Stanford MSCS student."
   location         : "Stanford, CA"
   employer         : "Stanford University"
   uri              : # URL

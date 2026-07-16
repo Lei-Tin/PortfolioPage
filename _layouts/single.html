@@ -30,6 +30,10 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
+        {% if page.collection == 'publications' and page.authors %}
+          {% assign formatted_authors = page.authors | replace: "Shou-Yi Hung*", "RAY_EQUAL_CONTRIBUTION" | replace: "Shou-Yi Hung", "<strong>Shou-Yi Hung</strong>" | replace: "RAY_EQUAL_CONTRIBUTION", "<strong>Shou-Yi Hung*</strong>" %}
+          <p class="publication__authors">{{ formatted_authors }}</p>
+        {% endif %}
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
@@ -37,7 +41,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="publication__venue">Published in <strong>{{ page.venue }}</strong>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.collection == 'portfolio' %}
           <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}

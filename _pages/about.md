@@ -1,90 +1,125 @@
 ---
+layout: home
 permalink: /
-title: "About Me"
-author_profile: true
-redirect_from: 
+title: "Home"
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi! I'm **Shou-Yi, Hung**, and you can also call me **Ray**. I was born in Taichung, Taiwan, but grew up in Xiamen, Fujian, China. I can speak English, Chinese, a little bit of Taiwanese Hokkien, and a little bit of Japanese! You can reach out to me at **rayh@cs.toronto.edu** or **syhung0927@gmail.com**. 
+{% include base_path %}
 
-Education
-======
-I'm an incoming student at Stanford, MSCS program for Autumn 2026. I previously graduated with a Bachelor's Degree from the University of Toronto, specializing in Computer Science with a minor in Statistics.  
+<section class="hero hero--minimal" aria-labelledby="hero-title">
+  <div class="hero__copy" data-reveal>
+    <p class="eyebrow">Hi, I'm Ray <span aria-hidden="true">✦</span></p>
+    <h1 id="hero-title">I build useful language and AI systems.</h1>
+    <nav class="hero__socials" aria-label="Find Ray online">
+      <a href="https://github.com/{{ site.author.github }}">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
+      <details class="hero__others">
+        <summary>Others <span aria-hidden="true">+</span></summary>
+        <div class="hero__others-menu">
+          {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email <span aria-hidden="true">↗</span></a>{% endif %}
+          {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID <span aria-hidden="true">↗</span></a>{% endif %}
+          {% if site.author.steam %}<a href="https://steamcommunity.com/id/{{ site.author.steam }}">Steam <span aria-hidden="true">↗</span></a>{% endif %}
+          {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}">X <span aria-hidden="true">↗</span></a>{% endif %}
+        </div>
+      </details>
+    </nav>
+  </div>
 
-Some of the important courses that I have taken includes: 
+  <figure class="hero__portrait" data-reveal>
+    <img src="{{ base_path }}/images/ray.jpg" alt="Shou-Yi (Ray) Hung" width="560" height="700">
+  </figure>
+</section>
 
-Operating Systems, Computer Networking Systems, Deep Learning, Probabilistic Learning, Web Programming, Software Design, Software Engineering, Computer Vision, Data Structures & Algorithms, Algorithms Design & Analysis, Systems Programming, Computer Organization, Relational Databases, Linear Programming
+<section class="home-section home-section--news" aria-labelledby="news-title">
+  <div class="section-motif motif--pulse" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Updates</p>
+    <h2 id="news-title">Latest news</h2>
+  </div>
+  {% assign latest_news = site.data.news | sort: "date" | reverse %}
+  <ol class="news-list">
+    {% for item in latest_news limit: 5 %}
+      <li data-reveal>
+        <time datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%b %Y" }}</time>
+        <p>{{ item.text }}{% if item.url %} <a href="{{ base_path }}{{ item.url }}">Details <span aria-hidden="true">↗</span></a>{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
 
-Interests
-======
-My research interest currently lies in large language models, machine learning, and data processing. I am interested in the different applications that machine learning can be applied on to make our lives easier from day to day. Furthermore, I am interested to also discover any more optimal way that we can be using large language models, ranging from more efficient training and inferencing to model interpretability. 
+<section class="home-section home-section--focus" aria-labelledby="focus-title">
+  <div class="section-motif motif--dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Focus</p>
+    <h2 id="focus-title">What I work on</h2>
+  </div>
+  <div class="focus-grid">
+    <article class="focus-card" data-reveal>
+      <span class="focus-card__number">01</span>
+      <h3>Efficient intelligence</h3>
+      <p>Model sparsity, quantization, training, and inference techniques that make capable models more practical.</p>
+    </article>
+    <article class="focus-card" data-reveal>
+      <span class="focus-card__number">02</span>
+      <h3>Language systems</h3>
+      <p>Multilingual NLP, synthetic data, evaluation, and the behavior of modern language models.</p>
+    </article>
+    <article class="focus-card" data-reveal>
+      <span class="focus-card__number">03</span>
+      <h3>Applied engineering</h3>
+      <p>Reliable software and useful AI products shaped by real constraints and clear interfaces.</p>
+    </article>
+  </div>
+</section>
 
-My other interest lies in software engineering, which is reflected by my different projects that I have accomplished througout the years. I am extremely excited when I have the opportunity to build something that really makes an impact for myself and also the community around me. More details about this can be found in my [portfolio page](./portfolio). 
+<section class="home-section journey" aria-labelledby="journey-title">
+  <div class="section-motif motif--orbit" aria-hidden="true"></div>
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Path</p>
+    <h2 id="journey-title">Where I've been</h2>
+  </div>
+  <div class="journey__grid">
+    <div class="journey__intro" data-reveal>
+      <p>I grew up across Taiwan and China, studied computer science in Toronto, and am heading to Stanford for an MS in Computer Science.</p>
+    </div>
+    <ol class="timeline" data-reveal>
+      <li><span class="timeline__year">2026</span><div><strong>Stanford University</strong><span>MS in Computer Science</span></div></li>
+      <li><span class="timeline__year">2025</span><div><strong>Amazon Web Services</strong><span>Software Development Engineer Intern · EventBridge</span></div></li>
+      <li><span class="timeline__year">2021–26</span><div><strong>University of Toronto</strong><span>BSc in Computer Science · NLP and systems research</span></div></li>
+    </ol>
+  </div>
+</section>
 
-Internship Experiences
-======
-
-I have worked at as a Software Development Engineer at Amazon Web Services Vancouver, working under the EventBridge team. More details can be found on the PDF version of my CV (at the top of my [CV Page](./cv)).
-
-<!-- I previously worked at Huawei Canada as a Machine Learning Researcher Intern at the Noah's Ark Lab for 12 months. I was focused on Large Language Model researches, including model quantization and synthetic data generation for model training. Most of the time, I worked on research related works, that is, running experiments, reading papers, presenting ideas, etc. However, sometimes, I also get assigned deliverable works, which involves training models that can be deployed either on the cloud or edge devices.   -->
-
-Academic Research Experiences
-======
-I have had the pleasure to be supervised by [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/) as a research assistant, where I conducted research on model sparsity and quantization, focusing on LLMs and model acceleration.
-
-I have also had the pleasure to be supervised by [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/) as an **NLP research student**, where I was given numerous tasks, ranging from conducting statistical analysis to assisting in writing up research papers. 
-
-Together, we have published a few papers, publications can be found under the [publications page](./publications). 
-
-Aside from my NLP research experience, I've also had experience working as an operating systems research volunteer under the supervision of [Prof. Kuei (Jack) Sun](https://www.cs.toronto.edu/~sunk/), where I signed up as a volunteer to develop features for a toy operating system (like Stanford's PintOS) written in **Rust**, named [KidneyOS](https://github.com/KidneyOS/KidneyOS). In the end, I completed parts of the Pool Allocator for memory management, and a little bit of ELF Header Verifications. 
-
-Teaching Experiences
-======
-I have also worked previously at the University of Toronto as a Teaching Assistant, more details can be found under the [teaching page](./teaching)
-
-Skills
-======
-## Technologies
-- Python (NumPy, OpenCV, PyTorch, HuggingFace, Accelerate, Distributed Learning)
-- Java (JUnit)
-- SQL (MySQL, PostgreSQL, SQLite)
-- NoSQL (Firebase)
-- HTML/CSS
-- JavaScript
-- C/C++
-- R
-- MIPS Assembly
-- Rust
-- Ruby
-- TypeScript
-
-## Machine Learning
-- HuggingFace
-- PyTorch
-- OpenCV
-- NumPy
-- Accelerate (Fully Sharded Data Parallel, Distributed Data Parallel)
-- Distributed Learning
-
-## Frameworks / Tools
-- Shell (Bash, Zsh, Sh)
-- Linux / Unix
-- Selenium
-- Matplotlib
-- Seaborn
-- Pandas
-- REST API
-- LaTeX
-- Flask
-- BeautifulSoup
-- React
-- Node.js
-- Docker
-- Jupyter Notebook
-- Conda
-- Git
-- CI/CD
-- Amazon Web Services
-- Microsoft Azure
+<section class="home-section selected-work" aria-labelledby="work-title">
+  <div class="section-motif motif--spark" aria-hidden="true">✦</div>
+  <div class="section-heading section-heading--row" data-reveal>
+    <div>
+      <p class="section-kicker">Projects</p>
+      <h2 id="work-title">Selected projects</h2>
+    </div>
+    <a class="text-link" href="{{ base_path }}/portfolio/">View all projects <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="work-grid">
+    {% assign featured_projects = site.portfolio | reverse %}
+    {% for project in featured_projects limit: 3 %}
+      <a class="work-card" href="{{ base_path }}{{ project.url }}" data-reveal>
+        {% if project.header.teaser %}
+          <div class="work-card__image">
+            <img src="{{ base_path }}/images/{{ project.header.teaser }}" alt="" loading="lazy">
+          </div>
+        {% endif %}
+        <div>
+          <span class="work-card__index">0{{ forloop.index }}</span>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.excerpt | markdownify | strip_html | truncatewords: 20 }}</p>
+        </div>
+        <span class="work-card__arrow" aria-hidden="true">↗</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
