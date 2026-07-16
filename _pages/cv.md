@@ -60,13 +60,6 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
   <div class="cv-publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</div>
-  
-<!-- Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul> -->
-  
 
 # Teaching
   <div class="cv-teaching">{% for post in site.teaching reversed %}
