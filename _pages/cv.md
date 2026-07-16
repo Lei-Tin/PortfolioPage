@@ -16,7 +16,7 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 * MSCS, Stanford University, 2026 - 2028 (Expected)
   * Incoming student in Autumn 2026
 
-* Honours Bachelor of Science in Computer Science, with a Minor in Statistics, University of Toronto, 2021 - 2026
+* Honours Bachelor of Science in Computer Science, University of Toronto, 2021 - 2026
   * Arts & Sceince Internship Program (Co-op)
   * Cumulative GPA 4.0/4.0
   * Deans List x3, University of Toronto Excellence Award (UTEA), Woodsworth College Scholarship
@@ -56,9 +56,10 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
 
 
 # Publications
-  <ul>{% for post in site.publications reversed %}
+  <p class="publication-note"><strong>*</strong> denotes equal contribution.</p>
+  <div class="cv-publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</div>
   
 <!-- Talks
 ======
@@ -68,9 +69,9 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
   
 
 # Teaching
-  <ul>{% for post in site.teaching reversed %}
+  <div class="cv-teaching">{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</div>
 
 
 # Competitions

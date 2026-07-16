@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection %} archive__item--{{ post.collection }}{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -44,14 +44,21 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'publications' and post.authors %}
-          <p>{{ post.authors }}</p>
-        {% endif %}
-
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y-%m" }} </p>
+          <div class="teaching-card__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+            {% if post.type %}<span>{{ post.type }}</span>{% endif %}
+          </div>
+          {% if post.venue %}<p class="teaching-card__venue">{{ post.venue }}</p>{% endif %}
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <div class="publication-card__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+            {% if post.venue %}<strong>{{ post.venue }}</strong>{% endif %}
+          </div>
+          {% if post.authors %}
+            {% assign formatted_authors = post.authors | replace: "Shou-Yi Hung*", "RAY_EQUAL_CONTRIBUTION" | replace: "Shou-Yi Hung", "<strong>Shou-Yi Hung</strong>" | replace: "RAY_EQUAL_CONTRIBUTION", "<strong>Shou-Yi Hung*</strong>" %}
+            <p class="publication__authors">{{ formatted_authors }}</p>
+          {% endif %}
         {% elsif post.collection == 'portfolio' %}
           
         {% elsif post.date %}
@@ -59,7 +66,7 @@
         {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
@@ -73,7 +80,7 @@
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
     {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">View Paper</a></p>
+      <p class="publication-card__action"><a href="{{ post.paperurl }}">View paper <span aria-hidden="true">→</span></a></p>
     {% elsif post.slidesurl %}
       <p><a href="{{ post.slidesurl }}">View Slides</a></p>
     {% endif %}

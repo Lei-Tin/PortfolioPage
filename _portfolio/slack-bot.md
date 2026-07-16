@@ -2,6 +2,8 @@
 title: "Course Project - Team Spirit Slack Bot"
 excerpt: "Team Lead - A full stack web application to help you schedule meetings with another individual <br><img src='/images/portfolio/slack-bot.png'>"
 collection: portfolio
+header:
+  teaser: portfolio/slack-bot.png
 language: "Python, PostgreSQL, Slack Bolt SDK, PHP, OAuth2"
 date: 2024-02-04
 ---

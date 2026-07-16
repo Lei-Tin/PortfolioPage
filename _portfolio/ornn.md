@@ -2,6 +2,8 @@
 title: "Ornn"
 excerpt: "Auto Accept Bot and more for League of Legends <br><img src='/images/portfolio/ornn.png'>"
 collection: portfolio
+header:
+  teaser: portfolio/ornn.png
 language: "Python, PyInstaller, PyStray, Flask, HTML/CSS, WebSocket, API Calls, asyncio"
 date: 2024-12-09
 ---

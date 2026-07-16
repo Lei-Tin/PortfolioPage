@@ -1,0 +1,29 @@
+{% include base_path %}
+
+{% assign project_image = post.header.teaser %}
+{% unless project_image %}
+  {% if post.excerpt contains "src='" %}
+    {% assign image_parts = post.excerpt | split: "src='" %}
+    {% assign project_image = image_parts[1] | split: "'" | first | remove_first: "/images/" %}
+  {% endif %}
+{% endunless %}
+
+<a class="portfolio-card" href="{{ base_path }}{{ post.url }}">
+  <div class="portfolio-card__media{% unless project_image %} portfolio-card__media--empty{% endunless %}">
+    {% if project_image %}
+      {% if project_image contains "://" or project_image contains "/images/" %}
+        <img src="{{ project_image }}" alt="" loading="lazy">
+      {% else %}
+        <img src="{{ base_path }}/images/{{ project_image }}" alt="" loading="lazy">
+      {% endif %}
+    {% else %}
+      <span aria-hidden="true">✦</span>
+    {% endif %}
+  </div>
+  <div class="portfolio-card__body">
+    {% if post.language %}<p class="portfolio-card__language">{{ post.language }}</p>{% endif %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt | markdownify | strip_html | truncatewords: 20 }}</p>
+    <span class="portfolio-card__link">View project <span aria-hidden="true">→</span></span>
+  </div>
+</a>

@@ -1,0 +1,21 @@
+# Add new items with the newest date first or anywhere in this file.
+# The homepage sorts by date automatically and displays only the latest 5.
+- date: 2025-10-01
+  text: "mR3 was accepted as an ICLR poster."
+  url: "/publication/2025-10-01-mr3"
+
+- date: 2025-06-22
+  text: "SiniticMTError was released at the COLM WMDQS Workshop."
+  url: "/publication/2025-06-22-sinitic-mt-error"
+
+- date: 2025-06-02
+  text: "DataRubrics was released on arXiv."
+  url: "/publication/2025-06-02-datarubrics"
+
+- date: 2025-05-23
+  text: "TranslationCorrect appeared at ACL Demo."
+  url: "/publication/2025-05-23-translationcorrect"
+
+- date: 2025-05-19
+  text: "R3 was presented at the NeurIPS LLM Evaluation Workshop."
+  url: "/publication/2025-05-19-r3"

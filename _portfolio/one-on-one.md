@@ -2,6 +2,8 @@
 title: "Course Project - One on One Meeting Scheduling Platform"
 excerpt: "Team Lead - A full stack web application to help you schedule meetings with another individual <br><img src='/images/portfolio/one-on-one.png'>"
 collection: portfolio
+header:
+  teaser: portfolio/one-on-one.png
 language: "HTML/CSS, Django, React, SQLite, AWS EC2"
 date: 2024-02-04
 ---

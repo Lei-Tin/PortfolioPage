@@ -1,53 +1,37 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% if post.collection == 'publications' %}
+  {% assign formatted_authors = post.authors | replace: "Shou-Yi Hung*", "RAY_EQUAL_CONTRIBUTION" | replace: "Shou-Yi Hung", "<strong>Shou-Yi Hung</strong>" | replace: "RAY_EQUAL_CONTRIBUTION", "<strong>Shou-Yi Hung*</strong>" %}
+  <article class="cv-publication" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <div class="cv-publication__meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      {% if post.venue %}<strong>{{ post.venue }}</strong>{% endif %}
+    </div>
+    <h3 itemprop="headline"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a></h3>
+    {% if post.authors %}<p class="cv-publication__authors">{{ formatted_authors }}</p>{% endif %}
+  </article>
+{% elsif post.collection == 'teaching' %}
+  <article class="cv-teaching-card" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="cv-teaching-card__meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      {% if post.type %}<span>{{ post.type }}</span>{% endif %}
+    </div>
+    <h3 itemprop="headline"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a></h3>
+    {% if post.venue %}<p>{{ post.venue }}</p>{% endif %}
+  </article>
 {% else %}
-  {% assign title = post.title %}
+  <div class="{{ include.type | default: "list" }}__item">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      <li>
+        <i>{{ post.date | default: "1900-01-01" | date: "%Y-%m" }}</i> -
+        <span class="archive__item-title" itemprop="headline">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        </span>
+        {% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}
+        {% if post.authors %}, <i class="post-authors">{{ post.authors }}</i>{% endif %}
+      </li>
+    </article>
+  </div>
 {% endif %}
-
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
-    {% endif %}
-    <i>{{ post.date | default: "1900-01-01" | date: "%Y-%m" }}</i> -
-    <span class="archive__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-        {{ title }}
-      </a>
-    </span>
-    {% if post.venue %}
-    ,
-    <i>
-      {{ post.venue }}
-    </i>
-    {% endif %}
-    {% if post.authors %}
-    ,
-      <i class="post-authors">
-        {{ post.authors }}
-      </i>
-    {% endif %}
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
- </article>
-</div>
