@@ -117,6 +117,12 @@ redirect_from:
           <span class="work-card__index">0{{ forloop.index }}</span>
           <h3>{{ project.title }}</h3>
           <p>{{ project.excerpt | markdownify | strip_html | truncatewords: 20 }}</p>
+          {% if project.steam_id %}
+            {% include workshop-stats.html workshop_id=project.steam_id compact=true %}
+          {% endif %}
+          {% if project.github_repo %}
+            {% include github-stats.html github_repo=project.github_repo compact=true %}
+          {% endif %}
         </div>
         <span class="work-card__arrow" aria-hidden="true">↗</span>
       </a>

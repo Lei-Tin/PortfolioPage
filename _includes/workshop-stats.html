@@ -1,0 +1,11 @@
+{% if include.workshop_id %}
+  <div class="project-stats project-stats--loading{% if include.compact %} project-stats--compact{% endif %}"
+       data-workshop-stats
+       data-workshop-id="{{ include.workshop_id }}"
+       aria-label="Steam Workshop statistics"
+       aria-busy="true">
+    <span><strong data-workshop-value="subscriptions">-</strong> subscribers</span>
+    <span><strong data-workshop-value="views">-</strong> views</span>
+    <span><strong data-workshop-value="favorites">-</strong> favorites</span>
+  </div>
+{% endif %}

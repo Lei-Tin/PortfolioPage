@@ -4,6 +4,7 @@ excerpt: "A blog page that I seldom updates <br><img src='/images/portfolio/ray-
 collection: portfolio
 language: "Jekyll, HTML/CSS, JavaScript, Ruby, GitHub Pages"
 date: 2022-09-25
+github_repo: "Lei-Tin/Lei-Tin.github.io"
 ---
 
 <img src='/images/portfolio/ray-blog.png'>

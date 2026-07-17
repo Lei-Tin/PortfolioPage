@@ -4,6 +4,7 @@ excerpt: "A simple web page To-Do List <br><img src='/images/portfolio/todo-list
 collection: portfolio
 language: "HTML/CSS, JavaScript"
 date: 2023-01-01
+github_repo: "Lei-Tin/ToDoList"
 ---
 
 <img src='/images/portfolio/todo_list.png'>"

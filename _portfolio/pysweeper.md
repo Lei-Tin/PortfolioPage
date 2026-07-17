@@ -4,6 +4,7 @@ excerpt: "A recreation of the game Minesweeper using Python and pygame <br><img 
 collection: portfolio
 language: "Python, pygame"
 date: 2022-05-01
+github_repo: "Lei-Tin/PySweeper"
 ---
 
 <img src='/images/portfolio/pysweeper.png'>

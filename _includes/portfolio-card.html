@@ -24,6 +24,12 @@
     {% if post.language %}<p class="portfolio-card__language">{{ post.language }}</p>{% endif %}
     <h2>{{ post.title }}</h2>
     <p>{{ post.excerpt | markdownify | strip_html | truncatewords: 20 }}</p>
+    {% if post.steam_id %}
+      {% include workshop-stats.html workshop_id=post.steam_id compact=true %}
+    {% endif %}
+    {% if post.github_repo %}
+      {% include github-stats.html github_repo=post.github_repo compact=true %}
+    {% endif %}
     <span class="portfolio-card__link">View project <span aria-hidden="true">→</span></span>
   </div>
 </a>

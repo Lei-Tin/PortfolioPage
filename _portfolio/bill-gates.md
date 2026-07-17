@@ -4,6 +4,7 @@ excerpt: "Co-Team Lead - A bill recording software with cloud storage capabiliti
 collection: portfolio
 language: "Java, Java Spring, JUnit, MySQL, JDBC, Gradle, Maven"
 date: 2023-01-01
+github_repo: "CSC207-2022F-UofT/course-project-bill-gates"
 ---
 
 This is a course project for the course CSC207 (Software Design). 

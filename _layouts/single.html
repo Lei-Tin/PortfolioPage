@@ -51,6 +51,11 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'portfolio' %}
+          {% if page.steam_id %}{% include workshop-stats.html workshop_id=page.steam_id %}{% endif %}
+          {% if page.github_repo %}{% include github-stats.html github_repo=page.github_repo %}{% endif %}
+        {% endif %}
+
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl %}

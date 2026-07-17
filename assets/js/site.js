@@ -116,6 +116,107 @@
     });
   }
 
+  document.querySelectorAll('[data-workshop-stats]').forEach(function (stats) {
+    var workshopId = stats.getAttribute('data-workshop-id');
+    var fields = ['subscriptions', 'views', 'favorites'];
+    var pending = fields.length;
+
+    function finishRequest() {
+      pending -= 1;
+      if (pending > 0) return;
+
+      stats.classList.remove('project-stats--loading');
+      stats.setAttribute('aria-busy', 'false');
+    }
+
+    fields.forEach(function (field) {
+      var endpoint = 'https://img.shields.io/steam/' + field + '/' + encodeURIComponent(workshopId) + '.json';
+      fetch(endpoint, {
+        mode: 'cors',
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer'
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Steam statistics request failed');
+          return response.json();
+        })
+        .then(function (data) {
+          var value = data.value || data.message;
+          var target = stats.querySelector('[data-workshop-value="' + field + '"]');
+          if (value && target) {
+            target.textContent = value;
+          }
+        })
+        .catch(function () { /* Keep the dash when the provider is unavailable. */ })
+        .then(finishRequest);
+    });
+  });
+
+  document.querySelectorAll('[data-github-stats]').forEach(function (stats) {
+    var repo = stats.getAttribute('data-github-repo');
+    var fields = {
+      stars: 'stars',
+      forks: 'forks',
+      watching: 'watchers'
+    };
+    var cacheKey = 'github-repo-stats:v2:' + repo;
+    var cacheLifetime = 30 * 60 * 1000;
+    var pending = Object.keys(fields).length;
+
+    function renderGithubStats(data) {
+      Object.keys(fields).forEach(function (field) {
+        var target = stats.querySelector('[data-github-value="' + field + '"]');
+        if (target && data[field] !== undefined && data[field] !== null && data[field] !== '') {
+          target.textContent = data[field];
+        }
+      });
+      stats.classList.remove('project-stats--loading');
+      stats.setAttribute('aria-busy', 'false');
+    }
+
+    try {
+      var cached = JSON.parse(sessionStorage.getItem(cacheKey));
+      if (cached && Date.now() - cached.savedAt < cacheLifetime) {
+        renderGithubStats(cached.data);
+        return;
+      }
+    } catch (error) { /* Continue without cached repository statistics. */ }
+
+    var repoPath = repo.split('/').map(encodeURIComponent).join('/');
+    var values = {};
+
+    function finishRequest() {
+      pending -= 1;
+      if (pending > 0) return;
+
+      renderGithubStats(values);
+      if (Object.keys(values).length > 0) {
+        try {
+          sessionStorage.setItem(cacheKey, JSON.stringify({ savedAt: Date.now(), data: values }));
+        } catch (error) { /* Continue without caching repository statistics. */ }
+      }
+    }
+
+    Object.keys(fields).forEach(function (field) {
+      var endpoint = 'https://img.shields.io/github/' + fields[field] + '/' + repoPath + '.json';
+      fetch(endpoint, {
+        mode: 'cors',
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer'
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error('GitHub statistics request failed');
+          return response.json();
+        })
+        .then(function (data) {
+          var value = data.value || data.message;
+          if (value !== undefined && value !== null && value !== '') values[field] = value;
+        })
+        .catch(function () { /* Keep the dash when the provider is unavailable. */ })
+        .then(finishRequest);
+    });
+  });
+
   var revealItems = document.querySelectorAll('[data-reveal]');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     var revealObserver = new IntersectionObserver(function (entries) {
