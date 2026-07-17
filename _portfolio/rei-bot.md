@@ -4,6 +4,7 @@ excerpt: "A Discord bot that is used to play music <br><img src='/images/portfol
 collection: portfolio
 language: "Python, discord.py, asyncio, GitHub Actions (CI/CD), OAuth2, cookies, yt-dlp, ffmpeg, csv"
 date: 2023-07-01
+github_repo: "Lei-Tin/Rei-Bot"
 ---
 
 <img src='/images/portfolio/rei-bot.png'>

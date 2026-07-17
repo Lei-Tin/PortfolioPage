@@ -4,6 +4,7 @@ excerpt: "An extension of a course homework related to Tic Tac Toe <br><img src=
 collection: portfolio
 language: "Python, plotly, csv"
 date: 2022-07-31
+github_repo: "Lei-Tin/TicTacToeAI"
 ---
 
 <img src='/images/portfolio/tictactoe-ai.png'>

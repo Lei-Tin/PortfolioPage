@@ -6,6 +6,7 @@ header:
   teaser: portfolio/ornn.png
 language: "Python, PyInstaller, PyStray, Flask, HTML/CSS, WebSocket, API Calls, asyncio"
 date: 2024-12-09
+github_repo: "Lei-Tin/Ornn"
 ---
 
 <img src='/images/portfolio/ornn.png'>

@@ -4,6 +4,7 @@ excerpt: "A recreation of the game snake using Python and pygame <br><img src='/
 collection: portfolio
 language: "Python, pygame"
 date: 2022-05-22
+github_repo: "Lei-Tin/PySnake"
 ---
 
 <img src='/images/portfolio/pysnake.gif'>

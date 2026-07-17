@@ -4,6 +4,7 @@ excerpt: "A script written in Python obtain each frame of Bad Apple but replaced
 collection: portfolio
 language: "Python, OpenCV, Pillow, ffmpeg"
 date: 2023-01-01
+github_repo: "Lei-Tin/BinaryBadApple"
 ---
 
 <img src='/images/portfolio/bad_apple.gif'>"

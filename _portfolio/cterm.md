@@ -4,6 +4,7 @@ excerpt: "An application written in C to change your terminal output colors <br>
 collection: portfolio
 language: "C, Zshell, Bash"
 date: 2023-04-30
+github_repo: "Lei-Tin/CTerm"
 ---
 
 <img src='/images/portfolio/cterm.png'>

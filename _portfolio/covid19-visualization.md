@@ -4,6 +4,7 @@ excerpt: "A visualization tool for the COVID19 Data <br><img src='/images/portfo
 collection: portfolio
 language: "Python, pygame"
 date: 2022-05-22
+github_repo: "Lei-Tin/COVID19-Data-Visualization"
 ---
 
 <img src='/images/portfolio/covid19-visualization.gif'>

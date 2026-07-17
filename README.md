@@ -55,18 +55,6 @@ In the GitHub repository settings, **Pages → Build and deployment** should use
 
 The site follows the visitor's system light/dark preference on first load. The toggle in the navigation lets them override it, and the choice is remembered in the browser.
 
-## Update the homepage news
-
-Edit `_data/news.yml` to add, remove, or change news items. Each item supports a date, a short sentence, and an optional internal link:
-
-```yaml
-- date: 2026-07-16
-  text: "A short update goes here."
-  url: "/publication/example"
-```
-
-The homepage sorts entries by `date` automatically and displays only the latest five. The file can contain more than five items; older entries remain stored but are not shown on the homepage.
-
 ## Credits
 
 The original site structure is based on [Academic Pages](https://github.com/academicpages/academicpages.github.io) and [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/).

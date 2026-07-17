@@ -1,0 +1,11 @@
+{% if include.github_repo %}
+  <div class="project-stats project-stats--github project-stats--loading{% if include.compact %} project-stats--compact{% endif %}"
+       data-github-stats
+       data-github-repo="{{ include.github_repo }}"
+       aria-label="GitHub repository statistics"
+       aria-busy="true">
+    <span><strong data-github-value="stars">-</strong> stars</span>
+    <span><strong data-github-value="forks">-</strong> forks</span>
+    <span><strong data-github-value="watching">-</strong> watching</span>
+  </div>
+{% endif %}

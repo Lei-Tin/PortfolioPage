@@ -4,6 +4,7 @@ excerpt: "A email reviewer that can be used to streamline the Majsoul game revie
 collection: portfolio
 language: "Python, Selenium, poplib, smtplib"
 date: 2022-06-05
+github_repo: "Lei-Tin/MajsoulEmailReviewer"
 ---
 
 <img src='/images/portfolio/majsoul-reviewer.gif'>

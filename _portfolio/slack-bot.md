@@ -6,6 +6,7 @@ header:
   teaser: portfolio/slack-bot.png
 language: "Python, PostgreSQL, Slack Bolt SDK, PHP, OAuth2"
 date: 2024-02-04
+github_repo: "csc301-2023-fall/project-42-team-collab"
 ---
 
 <img src='/images/portfolio/slack-bot.png'>

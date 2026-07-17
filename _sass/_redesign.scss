@@ -498,7 +498,7 @@ img { border: 0; }
 .work-card__index { color: var(--muted); font-family: monospace; font-size: 0.68rem; }
 .work-card__type { display: inline-block; width: max-content; margin: 0 0 0.7rem; padding: 0.28rem 0.52rem; color: var(--accent); background: var(--accent-soft); border-radius: 999px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.04em; }
 .work-card h3 { margin: 0; color: var(--text-strong); font-size: 1.3rem; line-height: 1.2; letter-spacing: -0.03em; }
-.work-card p:last-child { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.8rem; line-height: 1.65; }
+.work-card > div:not(.work-card__image) > p { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.8rem; line-height: 1.65; }
 .work-card__arrow { position: absolute; top: 1.3rem; right: 1.3rem; color: var(--accent); font-size: 1.1rem; transition: transform 180ms ease; }
 .work-card:hover .work-card__arrow { transform: translate(3px, -3px); }
 
@@ -658,6 +658,12 @@ img { border: 0; }
 .portfolio-card__language { display: -webkit-box; min-height: 2.5em; margin: 0 0 0.7rem; overflow: hidden; color: var(--accent); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.62rem; font-weight: 700; line-height: 1.35; letter-spacing: 0.02em; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .portfolio-card h2 { margin: 0; padding: 0; border: 0; color: var(--text-strong); font-size: 1.05rem; line-height: 1.35; }
 .portfolio-card__body > p:not(.portfolio-card__language) { margin: 0.65rem 0 1rem; color: var(--muted); font-size: 0.78rem; line-height: 1.55; }
+.project-stats { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin: 1.25rem 0 1.5rem; padding: 0.9rem 1rem; color: var(--muted); background: color-mix(in srgb, var(--lemon) 24%, var(--surface-raised)); border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--line)); border-radius: 0.85rem; font-size: 0.7rem; line-height: 1.45; transition: opacity 160ms ease; }
+.project-stats--github { background: color-mix(in srgb, var(--peach) 24%, var(--surface-raised)); }
+.project-stats span { display: inline-flex; align-items: baseline; gap: 0.22rem; white-space: nowrap; }
+.project-stats strong { min-width: 1.8em; color: var(--text-strong); font-weight: 800; font-variant-numeric: tabular-nums; }
+.project-stats--loading { opacity: 0.58; }
+.project-stats--compact { gap: 0.35rem 0.8rem; margin: 0 0 0.65rem; padding: 0; background: transparent; border: 0; border-radius: 0; font-size: 0.62rem; }
 .portfolio-card__link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: auto; color: var(--text-strong); font-size: 0.72rem; font-weight: 750; }
 .portfolio-card__link span { color: var(--accent); transition: transform 180ms ease; }
 .portfolio-card:hover .portfolio-card__link { color: var(--accent); }
@@ -1099,7 +1105,7 @@ img { border: 0; }
 .work-card:hover .work-card__image img { transform: scale(1.025); }
 .selected-work .work-card__index { display: block; margin-bottom: 0.65rem; }
 .selected-work .work-card h3 { font-size: 1.05rem; }
-.selected-work .work-card p:last-child { font-size: 0.78rem; line-height: 1.55; }
+.selected-work .work-card > div:not(.work-card__image) > p { font-size: 0.78rem; line-height: 1.55; }
 .selected-work .work-card__arrow { top: 10.35rem; }
 
 .section-motif { position: absolute; top: clamp(4.5rem, 7vw, 6.5rem); right: 0.5rem; }

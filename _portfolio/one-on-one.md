@@ -6,6 +6,7 @@ header:
   teaser: portfolio/one-on-one.png
 language: "HTML/CSS, Django, React, SQLite, AWS EC2"
 date: 2024-02-04
+github_repo: "Lei-Tin/CSC309-Project-1on1"
 ---
 
 <img src='/images/portfolio/one-on-one.png'>
