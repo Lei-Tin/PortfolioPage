@@ -159,16 +159,22 @@
       forks: 'forks',
       watching: 'watchers'
     };
-    var cacheKey = 'github-repo-stats:v2:' + repo;
+    var cacheKey = 'github-repo-stats:v3:' + repo;
     var cacheLifetime = 30 * 60 * 1000;
     var pending = Object.keys(fields).length;
+
+    function normalizeMetricValue(value) {
+      if (value === undefined || value === null) return null;
+
+      var text = String(value).trim();
+      return /^\d+(?:[.,]\d+)?[kKmMbB]?$/.test(text) ? text : null;
+    }
 
     function renderGithubStats(data) {
       Object.keys(fields).forEach(function (field) {
         var target = stats.querySelector('[data-github-value="' + field + '"]');
-        if (target && data[field] !== undefined && data[field] !== null && data[field] !== '') {
-          target.textContent = data[field];
-        }
+        var value = normalizeMetricValue(data[field]);
+        if (target && value !== null) target.textContent = value;
       });
       stats.classList.remove('project-stats--loading');
       stats.setAttribute('aria-busy', 'false');
@@ -209,8 +215,8 @@
           return response.json();
         })
         .then(function (data) {
-          var value = data.value || data.message;
-          if (value !== undefined && value !== null && value !== '') values[field] = value;
+          var value = normalizeMetricValue(data.value);
+          if (value !== null) values[field] = value;
         })
         .catch(function () { /* Keep the dash when the provider is unavailable. */ })
         .then(finishRequest);
