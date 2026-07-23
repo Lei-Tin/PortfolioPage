@@ -2,6 +2,8 @@
 layout: home
 permalink: /
 title: "Home"
+og_title: "Shou-Yi Hung"
+description: "AI researcher and software engineer building useful language and AI systems."
 author_profile: false
 redirect_from:
   - /about/
