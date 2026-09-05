@@ -1,16 +1,16 @@
 ---
 title: "Course Project - Breakout"
-excerpt: "An assembly reimplementation of the classic game breakout <br><img src='/images/portfolio/breakout.png'>"
+excerpt: "An assembly reimplementation of the classic game breakout <br><img src='/images/portfolio/breakout.png' alt='Breakout game preview'>"
 collection: portfolio
 language: "MIPS Assembly, MARS, EMARS"
 date: 2022-11-07
 ---
 
-<img src='/images/portfolio/breakout.png'>"
+<img src='/images/portfolio/breakout.png' alt='Breakout game preview'>
 
 This is a course project for the course CSC258 (Computer Organization). 
 
-We aim to recreate the classic game "Breakout" using MIPS Assembly. Projected coded using MARS Emulator, Version 4.5. 
+We aim to recreate the classic game "Breakout" using MIPS Assembly. The project was coded using MARS Emulator, version 4.5.
 
 The game is also available to run on EMARS, which is written by [Azalea](https://github.com/hykilpikonna), a really talented student in the same offering for my CSC258. 
 

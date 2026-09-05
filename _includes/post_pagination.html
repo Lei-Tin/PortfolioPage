@@ -1,7 +1,7 @@
 {% include base_path %}
 
 {% if page.previous or page.next %}
-  <nav class="pagination pagination--cards" aria-label="Previous and next publications">
+  <nav class="pagination pagination--cards" aria-label="Previous and next entries">
     {% if page.previous %}
       <a href="{{ base_path }}{{ page.previous.url }}" class="pagination__card pagination__card--previous">
         <span class="pagination__direction"><span aria-hidden="true">&larr;</span> {{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>

@@ -1,6 +1,6 @@
 ---
 title: "Personal Blog Page"
-excerpt: "A blog page that I seldom updates <br><img src='/images/portfolio/ray-blog.png'>"
+excerpt: "A blog page that I seldom update <br><img src='/images/portfolio/ray-blog.png'>"
 collection: portfolio
 language: "Jekyll, HTML/CSS, JavaScript, Ruby, GitHub Pages"
 date: 2022-09-25

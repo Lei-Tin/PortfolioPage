@@ -47,7 +47,7 @@ PDF updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.updated
 
 * May 2023 ~ December 2025: Machine Learning Research Assistant
   * Researched on Multilingual translation models and LLMs applications in the real world
-  * Supervisor: [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/)
+  * Supervisor: [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/)
 
 * September 2023 ~ December 2023: Operating Systems Research Volunteer
   * Project aimed to develop a toy operating system for educational purposes (like Stanford's PintOS), named KidneyOS, written completely in Rust. 
@@ -83,7 +83,7 @@ PDF updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.updated
 
 # Volunteer Activities
 * 2024: ACM SIGCSE TS Student Volunteer
-* 2021 ~ Present: Volunteer Note Taker at University of Toronto
+* 2021 ~ 2026: Volunteer Note Taker at University of Toronto
   * Selected multiple times to provide notes for disability services, with valid co-curricular credits
 * 2021: Recognized Study Group Leader for CSC110 (Foundations of Computer Science I)
 

@@ -9,7 +9,7 @@ github_repo: "Lei-Tin/CTerm"
 
 <img src='/images/portfolio/cterm.png'>
 
-A simple terminal appplication that I wrote right after I took the course in systems programming (CSC209 at University of Toronto). 
+A simple terminal application that I wrote right after I took the course in systems programming (CSC209 at University of Toronto).
 
 Written in C, looked up a lot of tutorials on how to change terminal output colors. Configured to work for both pure Linux environment (that uses bash) and ZShell, on Mac. 
 

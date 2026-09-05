@@ -1,13 +1,13 @@
 ---
 title: "Binary Bad Apple"
-excerpt: "A script written in Python obtain each frame of Bad Apple but replaced with 1s and 0s <br><img src='/images/portfolio/bad_apple.gif'>"
+excerpt: "A Python script that converts each frame of Bad Apple into 1s and 0s <br><img src='/images/portfolio/bad_apple.gif' alt='Bad Apple rendered with binary digits'>"
 collection: portfolio
 language: "Python, OpenCV, Pillow, ffmpeg"
 date: 2023-01-01
 github_repo: "Lei-Tin/BinaryBadApple"
 ---
 
-<img src='/images/portfolio/bad_apple.gif'>"
+<img src='/images/portfolio/bad_apple.gif' alt='Bad Apple rendered with binary digits'>
 
 A script written in Python to convert the video "Bad Apple" into a display with only 1s and 0s. It can be used to convert any video into 1s and 0s as well. 
 

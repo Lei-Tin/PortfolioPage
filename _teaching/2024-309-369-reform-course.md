@@ -9,12 +9,12 @@ location: "Toronto, Canada"
 excerpt: ""
 ---
 
-I have also helped Prof. Kuei (Jack) Sun in reforming some of the course content in both CSC309 and CSC369. 
+I helped Prof. Kuei (Jack) Sun revise course materials for CSC309 and CSC369.
 
 # CSC309 (Introduction to Web Programming)
 
-For CSC309, I have made a new Assignment 1 with HTML and CSS that is planned to be used at the new offering of CSC309 in the 2025 Academic Year, where Prof. Kuei (Jack) Sun will reform the course and add more weight to TypeScript and other more advanced web programming knowledge, instead of the old fashioned Django and plain HTML/CSS/JavaScript. 
+For CSC309, I created a new HTML and CSS Assignment 1 for the 2025 course revision led by Prof. Kuei (Jack) Sun. The revision placed greater emphasis on TypeScript and advanced web programming topics.
 
 # CSC369 (Operating Systems)
 
-I have assisted in creating a tutorial code to demonstrate the buffer overflow attack using a shellcode. The whole code is available [here](https://github.com/Lei-Tin/BufferOverflowAttack). 
+I helped create tutorial code demonstrating a buffer overflow attack using shellcode. The whole code is available [here](https://github.com/Lei-Tin/BufferOverflowAttack).

@@ -1,13 +1,13 @@
 ---
 title: "Majsoul Email Reviewer"
-excerpt: "A email reviewer that can be used to streamline the Majsoul game review process with an AI <br><img src='/images/portfolio/majsoul-reviewer.gif'>"
+excerpt: "An email reviewer that can be used to streamline the Majsoul game review process with an AI <br><img src='/images/portfolio/majsoul-reviewer.webp'>"
 collection: portfolio
 language: "Python, Selenium, poplib, smtplib"
 date: 2022-06-05
 github_repo: "Lei-Tin/MajsoulEmailReviewer"
 ---
 
-<img src='/images/portfolio/majsoul-reviewer.gif'>
+<img src='/images/portfolio/majsoul-reviewer.webp' alt='Majsoul automated game review demonstration' loading='lazy'>
 
 This is an email reviewer for the game Majsoul (雀魂麻将), which is a game online that recreates the classical Japanese Riichi Mahjong. The script listens for any email sent to a specific email account, and starts a subprocess by using [Akochan](https://github.com/critter-mj/akochan) (deprecated, now named [Mortal](https://github.com/Equim-chan/Mortal)) to analyze your plays. Compiles all the plays you have made throughout the game and highlights any misplays that you have done. 
 
