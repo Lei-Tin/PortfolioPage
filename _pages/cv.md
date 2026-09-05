@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
+A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf).
+
+PDF updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.updated | date: "%B %-d, %Y" }}</time>.
 
 
 # Education
@@ -17,14 +19,14 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
   * Incoming student in Autumn 2026
 
 * Honours Bachelor of Science in Computer Science, University of Toronto, 2021 - 2026
-  * Arts & Sceince Internship Program (Co-op)
+  * Arts & Science Internship Program (Co-op)
   * Cumulative GPA 4.0/4.0
-  * Deans List x3, University of Toronto Excellence Award (UTEA), Woodsworth College Scholarship
+  * Dean's List x3, University of Toronto Excellence Award (UTEA), Woodsworth College Scholarship
 
 
 # Work Experience
-* May 2025 ~ August 2025: Software Development Engineer @ AWS Vancouver
-  * Working with EventBridge
+* May 2025 ~ August 2025: Software Development Engineer Intern @ AWS Vancouver
+  * Worked with EventBridge
   * Software Development
 
 <!-- * May 2024 ~ May 2025: Machine Learning Researcher Intern @ Huawei Technologies Canada
@@ -43,7 +45,7 @@ A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf)
   * Conducted experiments on 2:4 model sparsity and quantization with [SLiM](https://arxiv.org/abs/2410.09615), [BEAM](https://www.cs.toronto.edu/~mmozaffari/compression-trinity/beam/index.html), and utilized sparse Marlin Kernels to accelerate inference
   * Supervisor: [Prof. Maryam Mehri Dehnavi](https://www.cs.toronto.edu/~mmehride/)
 
-* May 2022 ~ December 2025: Machine Learning Research Assistant
+* May 2023 ~ December 2025: Machine Learning Research Assistant
   * Researched on Multilingual translation models and LLMs applications in the real world
   * Supervisor: [Prof. En-Shiun Annie Lee](https://www.cs.toronto.edu/~ealee/public/)
 

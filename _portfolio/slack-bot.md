@@ -1,6 +1,6 @@
 ---
 title: "Course Project - Team Spirit Slack Bot"
-excerpt: "Team Lead - A full stack web application to help you schedule meetings with another individual <br><img src='/images/portfolio/slack-bot.png'>"
+excerpt: "Team Lead - A Slack bot for recognizing colleagues with kudos tied to shared workplace values <br><img src='/images/portfolio/slack-bot.png'>"
 collection: portfolio
 header:
   teaser: portfolio/slack-bot.png

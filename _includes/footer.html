@@ -21,6 +21,6 @@
 
 <div class="page__footer-copyright">
   <span>© {{ "now" | date: "%Y" }} Shou-Yi (Ray) Hung</span>
-  <span class="footer__updated">Last updated · <time datetime="{{ "now" | date_to_xmlschema }}">{{ "now" | date: "%B %-d, %Y" }}</time></span>
+  <span class="footer__updated">Last updated - <time datetime="{{ site.content_updated }}">{{ site.content_updated | date: "%B %-d, %Y" }}</time></span>
   <span class="footer__note">Built with Jekyll.</span>
 </div>

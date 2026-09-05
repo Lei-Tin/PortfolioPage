@@ -91,8 +91,8 @@ redirect_from:
     </div>
     <ol class="timeline" data-reveal>
       <li><span class="timeline__year">2026</span><div><strong>Stanford University</strong><span>MS in Computer Science</span></div></li>
-      <li><span class="timeline__year">2025</span><div><strong>Amazon Web Services</strong><span>Software Development Engineer Intern · EventBridge</span></div></li>
-      <li><span class="timeline__year">2021–26</span><div><strong>University of Toronto</strong><span>BSc in Computer Science · NLP and systems research</span></div></li>
+      <li><span class="timeline__year">2025</span><div><strong>Amazon Web Services</strong><span>Software Development Engineer Intern - EventBridge</span></div></li>
+      <li><span class="timeline__year">2021–26</span><div><strong>University of Toronto</strong><span>BSc in Computer Science - NLP and systems research</span></div></li>
     </ol>
   </div>
 </section>

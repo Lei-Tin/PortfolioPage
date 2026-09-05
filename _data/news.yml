@@ -1,21 +1,22 @@
-# Add new items with the newest date first or anywhere in this file.
-# The homepage sorts by date automatically and displays only the latest 5.
-- date: 2025-10-01
-  text: "mR3 was accepted as an ICLR poster."
+# Paper news only. The homepage sorts by date and displays the latest 5.
+# When a proceedings source specifies only a month, use day 01 for sorting;
+# the website displays only the month and year.
+- date: 2026-05-01
+  text: "SiniticMTError appeared in the LREC 2026 proceedings."
+  url: "/publication/2025-06-22-sinitic-mt-error"
+
+- date: 2026-04-24
+  text: "mR3 appeared as a poster at ICLR 2026."
   url: "/publication/2025-10-01-mr3"
 
-- date: 2025-06-22
-  text: "SiniticMTError was released at the COLM WMDQS Workshop."
-  url: "/publication/2025-06-22-sinitic-mt-error"
+- date: 2025-12-07
+  text: "R3 appeared at the NeurIPS 2025 LLM Evaluation Workshop."
+  url: "/publication/2025-05-19-r3"
+
+- date: 2025-07-01
+  text: "TranslationCorrect appeared in ACL 2025 System Demonstrations."
+  url: "/publication/2025-05-23-translationcorrect"
 
 - date: 2025-06-02
   text: "DataRubrics was released on arXiv."
   url: "/publication/2025-06-02-datarubrics"
-
-- date: 2025-05-23
-  text: "TranslationCorrect appeared at ACL Demo."
-  url: "/publication/2025-05-23-translationcorrect"
-
-- date: 2025-05-19
-  text: "R3 was presented at the NeurIPS LLM Evaluation Workshop."
-  url: "/publication/2025-05-19-r3"

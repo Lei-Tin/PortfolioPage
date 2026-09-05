@@ -4,10 +4,10 @@ collection: publications
 category: conferences
 permalink: /publication/2025-05-23-translationcorrect
 excerpt: "This paper provides an integrated framework that streamlines the translation process, enabling easier data collection procedures and translation pipelines."
-date: 2025-05-23
-venue: 'ACL Demo'
+date: 2025-07-01 # Proceedings month; day is a sorting placeholder.
+venue: 'ACL 2025 - System Demonstrations'
 paperurl: 'https://aclanthology.org/2025.acl-demo.53/'
-authors: "Syed Mekael Wasti*, Shou-Yi Hung*, En-Shiun Annie Lee"
+authors: "Syed Mekael Wasti*, Shou-Yi Hung*, Christopher Collins, En-Shiun Annie Lee"
 # slidesurl: ''
 # citation: ""
 ---
