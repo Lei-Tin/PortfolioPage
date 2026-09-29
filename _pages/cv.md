@@ -11,7 +11,14 @@ redirect_from:
 
 A complete PDF version of my CV is available [here](/assets/shouyihung-cv.pdf).
 
-PDF updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.updated | date: "%B %-d, %Y" }}</time>.
+PDF last updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.updated | date: "%B %-d, %Y" }}</time>.
+
+
+# Academic contacts
+
+- Personal website - [shouyihung.com](https://shouyihung.com/)
+- Stanford University - [rayh@cs.stanford.edu](mailto:rayh@cs.stanford.edu) - [cs.stanford.edu/~rayh](https://cs.stanford.edu/~rayh/)
+- University of Toronto - [rayh@cs.toronto.edu](mailto:rayh@cs.toronto.edu) - [www.cs.toronto.edu/~rayh](https://www.cs.toronto.edu/~rayh/)
 
 
 # Education

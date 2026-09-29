@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Shou-Yi (Ray) Hung"
 description              : &description "AI researcher and software engineer building efficient, useful intelligent systems."
 url                      : https://shouyihung.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-content_updated          : "2026-09-05" # Update only when site content changes.
+content_updated          : "2026-09-28" # Update only when site content changes.
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Lei-Tin/PortfolioPage"
 
@@ -29,7 +29,7 @@ author:
   location         : "Stanford, CA"
   employer         : "Stanford University"
   uri              : # URL
-  email            : "rayh@cs.toronto.edu"
+  email            : "rayh@cs.stanford.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
