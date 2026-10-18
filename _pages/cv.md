@@ -23,7 +23,7 @@ PDF last updated: <time datetime="{{ site.data.cv.updated }}">{{ site.data.cv.up
 
 # Education
 * MSCS, Stanford University, 2026 - 2028 (Expected)
-  * Incoming student in Autumn 2026
+  * Currently pursuing an MS in Computer Science
 
 * Honours Bachelor of Science in Computer Science, University of Toronto, 2021 - 2026
   * Arts & Science Internship Program (Co-op)

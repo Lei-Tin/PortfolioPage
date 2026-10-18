@@ -87,7 +87,7 @@ redirect_from:
   </div>
   <div class="journey__grid">
     <div class="journey__intro" data-reveal>
-      <p>I grew up across Taiwan and China, studied computer science in Toronto, and am heading to Stanford for an MS in Computer Science.</p>
+      <p>I grew up across Taiwan and China, studied computer science in Toronto, and am currently pursuing an MS in Computer Science at Stanford.</p>
     </div>
     <ol class="timeline" data-reveal>
       <li><span class="timeline__year">2026</span><div><strong>Stanford University</strong><span>MS in Computer Science</span></div></li>
