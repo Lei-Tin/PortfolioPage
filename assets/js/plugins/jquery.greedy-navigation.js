@@ -10,52 +10,27 @@ var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('#site-nav .hidden-links');
 
-var breaks = [];
-
+// Measure the complete list on every resize, since responsive styles can
+// change link widths and make previously recorded breakpoints inaccurate.
 function updateNav() {
+  $hlinks.children().appendTo($vlinks);
+  $btn.addClass('hidden');
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var availableSpace = $nav.width();
+  var $items = $vlinks.children('*:not(.masthead__menu-item--lg)');
 
-  // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
-
-    // Record the width of the list
-    breaks.push($vlinks.width());
-
-    // Move item to the hidden list
-    $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
-
-    // Show the dropdown btn
-    if($btn.hasClass('hidden')) {
-      $btn.removeClass('hidden');
-    }
-
-  // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
-
-      // Move the item to the visible list
-      $hlinks.children().first().appendTo($vlinks);
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if(breaks.length < 1) {
-      $btn.addClass('hidden');
-      $hlinks.addClass('hidden');
-    }
+  while($vlinks.width() > availableSpace && $items.length) {
+    $items.last().prependTo($hlinks);
+    $btn.removeClass('hidden');
+    availableSpace = $nav.width() - $btn.outerWidth() - 30;
+    $items = $vlinks.children('*:not(.masthead__menu-item--lg)');
   }
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
-
-  // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
-    updateNav();
+  if(!$hlinks.children().length) {
+    $hlinks.addClass('hidden');
   }
 
+  $btn.attr('count', $hlinks.children().length);
 }
 
 // Window listeners

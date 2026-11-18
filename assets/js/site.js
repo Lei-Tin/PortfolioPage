@@ -46,9 +46,11 @@
 
   var mobileNavButton = document.querySelector('.nav-menu-toggle');
   var mobileNav = document.querySelector('.mobile-links');
+  var overflowNav = document.querySelector('.hidden-links');
   if (mobileNavButton && mobileNav) {
     function closeMobileNav() {
       mobileNav.classList.add('hidden');
+      if (overflowNav) overflowNav.classList.add('hidden');
       mobileNavButton.classList.remove('close');
       mobileNavButton.setAttribute('aria-expanded', 'false');
       mobileNavButton.setAttribute('aria-label', 'Open navigation');
@@ -56,7 +58,13 @@
 
     mobileNavButton.setAttribute('aria-expanded', 'false');
     mobileNavButton.addEventListener('click', function () {
-      if (!window.matchMedia('(max-width: 700px)').matches) return;
+      if (!window.matchMedia('(max-width: 700px)').matches) {
+        var overflowOpen = overflowNav && !overflowNav.classList.contains('hidden');
+        mobileNavButton.classList.toggle('close', overflowOpen);
+        mobileNavButton.setAttribute('aria-expanded', overflowOpen ? 'true' : 'false');
+        mobileNavButton.setAttribute('aria-label', overflowOpen ? 'Close navigation' : 'Open navigation');
+        return;
+      }
       var willOpen = mobileNav.classList.contains('hidden');
       mobileNav.classList.toggle('hidden', !willOpen);
       mobileNavButton.classList.toggle('close', willOpen);
@@ -67,13 +75,16 @@
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', closeMobileNav);
     });
+    if (overflowNav) {
+      overflowNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMobileNav);
+      });
+    }
 
-    window.addEventListener('resize', function () {
-      if (!window.matchMedia('(max-width: 700px)').matches) closeMobileNav();
-    });
+    window.addEventListener('resize', closeMobileNav);
 
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && !mobileNav.classList.contains('hidden')) {
+      if (event.key === 'Escape' && mobileNavButton.getAttribute('aria-expanded') === 'true') {
         closeMobileNav();
         mobileNavButton.focus();
       }
