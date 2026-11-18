@@ -1,6 +1,31 @@
 # Ray's Portfolio
 
-Personal website for Shou-Yi (Ray) Hung, including projects, publications, teaching, and CV. The production site is published with GitHub Pages at [shouyihung.com](https://shouyihung.com/).
+Personal website for Shou-Yi (Ray) Hung, including projects, publications, technical blog posts, teaching, and CV. The production site is published with GitHub Pages at [shouyihung.com](https://shouyihung.com/).
+
+## Write a blog post
+
+Add a Markdown file to `_posts/` named `YYYY-MM-DD-your-post-title.md`, for example:
+
+````markdown
+---
+title: "Your technical post title"
+date: 2026-11-17
+excerpt: "A short summary of the problem, approach, or result."
+tags:
+  - Machine Learning
+  - Engineering
+---
+
+Write your post in Markdown. Fenced code blocks support syntax highlighting:
+
+```python
+print("Hello, world!")
+```
+````
+
+Posts automatically appear at `/blog/`, grouped by year with tag counts, tag filtering, search, and newest/oldest sorting. Each post has its own `/blog/your-post-title/` page, reading time, and links back to the archive and tags. Keep filename slugs unique. Filters are stored in the URL, so filtered views can be bookmarked and shared. Posts also appear in the existing RSS feed at `/feed.xml`.
+
+Use `published: false` in the front matter to keep an unfinished post out of the site. This site enables future-dated content, so a future date alone does **not** keep a post unpublished. Update `content_updated` in `_config.yml` when publishing new content. The separate informal blog remains linked at the top of the Blog page.
 
 ## Serve locally with Docker
 

@@ -1,4 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 <script src="{{ base_path }}/assets/js/site.js?v={{ site.time | date: '%s' }}"></script>
+{% if page.url == '/blog/' %}
+  <script src="{{ base_path }}/assets/js/blog.js?v={{ site.time | date: '%s' }}"></script>
+{% endif %}
 
 {% include analytics.html %}

@@ -1,0 +1,7 @@
+{% if include.tags.size > 0 %}
+  <ul class="blog-tags" aria-label="Post tags">
+    {% for tag in include.tags %}
+      <li><a href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}" data-blog-tag="{{ tag | escape }}">{{ tag | escape }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}

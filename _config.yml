@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Shou-Yi (Ray) Hung"
 description              : &description "AI researcher and software engineer building efficient, useful intelligent systems."
 url                      : https://shouyihung.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-content_updated          : "2026-10-18" # Update only when site content changes.
+content_updated          : "2026-11-17" # Update only when site content changes.
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Lei-Tin/PortfolioPage"
 
@@ -240,11 +240,12 @@ defaults:
       type: posts
     values:
       layout: single
+      permalink: /blog/:title/
       author_profile: true
       read_time: true
       comments: true
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""

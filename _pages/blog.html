@@ -1,0 +1,75 @@
+---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+description: "Technical notes on AI, research, and software engineering by Shou-Yi (Ray) Hung."
+---
+
+<div class="blog" data-blog>
+  <div class="blog-intro">
+    <p>For personal updates and everyday stories, visit my <a href="https://lei-tin.github.io/">informal blog</a>.</p>
+  </div>
+
+  {% if site.posts.size > 0 %}
+    <div class="blog-controls" data-blog-controls hidden>
+      <div class="blog-filters" role="group" aria-label="Filter by tag">
+        <button class="blog-filter" type="button" data-blog-filter="" aria-pressed="true">All <span>{{ site.posts.size }}</span></button>
+        {% assign blog_tags = site.tags | sort %}
+        {% for tag in blog_tags %}
+          <button class="blog-filter" type="button" data-blog-filter="{{ tag[0] | escape }}" aria-pressed="false">{{ tag[0] | escape }} <span>{{ tag[1].size }}</span></button>
+        {% endfor %}
+      </div>
+      <div class="blog-toolbar">
+        <div class="blog-search">
+          <label class="visually-hidden" for="blog-search">Search posts</label>
+          <input id="blog-search" type="search" placeholder="Search posts…" autocomplete="off" data-blog-search>
+        </div>
+        <div class="blog-sort">
+          <label for="blog-sort">Sort by</label>
+          <select id="blog-sort" data-blog-sort>
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+      </div>
+      <div class="blog-results">
+        <p role="status" aria-live="polite" aria-atomic="true" data-blog-count>{{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %}</p>
+        <button class="blog-clear" type="button" data-blog-clear hidden>Clear filters</button>
+      </div>
+    </div>
+
+    <div class="blog-years" data-blog-years>
+      {% assign blog_years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in blog_years %}
+        <details class="blog-year" data-blog-year="{{ year.name }}" open>
+          <summary class="blog-year__heading">
+            <h2>{{ year.name }}</h2>
+            <span data-blog-year-count>{{ year.items.size }} {% if year.items.size == 1 %}post{% else %}posts{% endif %}</span>
+          </summary>
+          <div class="blog-year__posts" data-blog-year-posts>
+            {% for post in year.items %}
+              <article class="blog-entry" data-blog-post data-blog-tags="{{ post.tags | jsonify | escape }}" data-blog-date="{{ post.date | date: '%s' }}">
+                <div class="blog-entry__meta">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+                </div>
+                <h3 class="blog-entry__title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+                <p class="blog-entry__excerpt">{{ post.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 220 | escape }}</p>
+                {% include blog-tags.html tags=post.tags %}
+              </article>
+            {% endfor %}
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+
+    <div class="blog-empty" data-blog-no-results hidden>
+      <h2>No matching posts.</h2>
+      <p>Try another tag or search term.</p>
+    </div>
+  {% else %}
+    <div class="blog-empty">
+      <h2>No posts yet</h2>
+    </div>
+  {% endif %}
+</div>
